@@ -11,7 +11,7 @@ import java.util.ArrayList;
  *
  * @author danie
  */
-public class Cliente {
+public abstract class Cliente {
 
     private String cidade;
     private String endereco;
@@ -88,6 +88,11 @@ public class Cliente {
     public void setFone(String fone) {
         this.fone = fone;
     }
+    
+    public abstract String getCodigo();
+    public abstract void setCodigo(String codigo);
+    public abstract String getNome();
+    public abstract void setNome(String nome);
     
     @Override
     public String toString(){

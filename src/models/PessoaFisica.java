@@ -55,5 +55,15 @@ public class PessoaFisica extends Cliente {
     public String toString(){
         return "Nome: " + this.getNome() + "CPF: " + this.getCpf() + super.toString();
     }
+
+    @Override
+    public String getCodigo() {
+        return this.getCpf();
+    }
+
+    @Override
+    public void setCodigo(String codigo) {
+        this.setCpf(codigo);
+    }
     
 }

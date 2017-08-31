@@ -39,6 +39,11 @@ public class MenuInicial extends javax.swing.JFrame {
         setTitle("App Aula 24/08/2017");
 
         jBtnClientes.setText("Clientes");
+        jBtnClientes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnClientesActionPerformed(evt);
+            }
+        });
 
         jBtnProdutos.setText("Produtos");
         jBtnProdutos.addActionListener(new java.awt.event.ActionListener() {
@@ -82,6 +87,13 @@ public class MenuInicial extends javax.swing.JFrame {
         frmProdutos.initTable();
         frmProdutos.setVisible(true);
     }//GEN-LAST:event_jBtnProdutosActionPerformed
+
+    private void jBtnClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnClientesActionPerformed
+        FrmClientes frmClientes = new FrmClientes();
+        frmClientes.storage = this.storage;
+        frmClientes.initTable();
+        frmClientes.setVisible(true);
+    }//GEN-LAST:event_jBtnClientesActionPerformed
 
     /**
      * @param args the command line arguments

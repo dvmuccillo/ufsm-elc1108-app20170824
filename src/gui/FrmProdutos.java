@@ -36,7 +36,7 @@ public class FrmProdutos extends javax.swing.JFrame {
         this.id_produto = -1;
         this.jTxtCodigo.setText("");
         this.jTxtPreco.setText("");
-        this.jTxtDescricao.setText("");
+        this.jTxtDescricao.setText("");   
     }
 
     /**

@@ -56,4 +56,24 @@ public class PessoaJuridica extends Cliente{
         return "Razão Social: " + this.getRazaoSocial()
                 + " - CNPJ: " + this.getCnpj() + " - " + super.toString();
     }
+
+    @Override
+    public String getCodigo() {
+       return this.getCnpj();
+    }
+
+    @Override
+    public void setCodigo(String codigo) {
+        this.setCnpj(codigo);
+    }
+
+    @Override
+    public String getNome() {
+        return this.getRazaoSocial();
+    }
+
+    @Override
+    public void setNome(String nome) {
+        this.setRazaoSocial(nome);
+    }
 }
